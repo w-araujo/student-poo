@@ -36,6 +36,12 @@ class Programa
                     User user = new(name, password, email);
                     
                     users.Add(user);
+
+                    //  foreach (User user1 in users)
+                    //  {
+                    //     Console.WriteLine(user1.Name);
+                    //  }
+
                     break;
 
                     default: 

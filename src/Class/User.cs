@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.Class
 {
-    internal class User(string name, string password, string email)
+    public class User(string name, string password, string email)
     {
         private string name = name;
         private string password = password;
