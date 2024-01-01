@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student.src.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Student.Class
 {
-    public class User(string name, string password, string email)
+    public class User(string name, string password, string email) : IUser
     {
         private string name = name;
         private string password = password;
