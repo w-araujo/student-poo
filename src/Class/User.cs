@@ -56,8 +56,16 @@ namespace Student.Class
 
             if(includePassword)
             {
-                Console.WriteLine($"Password - {Password}")
+                Console.WriteLine($"Password - {Password}");
             }
+        }
+
+        // Método estático para gerar senhas aleatórias (Sem precisar de instâncias)
+        public static string GenerateRandomPassword(int length = 8)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }
