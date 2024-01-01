@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Student.Class
 {
+    // Henrança com a interface IUser, para implementar o contrato
     public class User(string name, string password, string email) : IUser
     {
         private string name = name;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.src.Interfaces
 {
+    // Contrato para ser implementado nas classes
     public interface IUser
     {
         string Name { get; set; }
