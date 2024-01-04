@@ -46,13 +46,14 @@ namespace Student.Class
         }
 
         // Sobrecarga de método com informações básicas
-        public void Greet()
+        // Método polimórfico - virtual usado para poder utilizar a sobrescrita em classes derivadas
+        public virtual void Greet()
         {
-            Console.WriteLine($"Nome: {name}, Email: {email}");
+            Console.WriteLine($"Olá: {this.Name}! (Usuário - e-mail: {Email})");
         }
 
         // Sobrecarga de método com parametro adicional
-        public void Greet(bool includePassword)
+        public virtual void Greet(bool includePassword)
         {
             Greet();
 
