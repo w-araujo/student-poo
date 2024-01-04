@@ -13,7 +13,7 @@ namespace Student.src.Interfaces
         string Password { get; set; }
         string Email { get; set; }
 
-        void Show();
-        void Show(bool includePassword);
+        void Greet();
+        void Greet(bool includePassword);
     }
 }

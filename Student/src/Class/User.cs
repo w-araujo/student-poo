@@ -46,15 +46,15 @@ namespace Student.Class
         }
 
         // Sobrecarga de método com informações básicas
-        public void Show()
+        public void Greet()
         {
             Console.WriteLine($"Nome: {name}, Email: {email}");
         }
 
         // Sobrecarga de método com parametro adicional
-        public void Show(bool includePassword)
+        public void Greet(bool includePassword)
         {
-            Show();
+            Greet();
 
             if(includePassword)
             {

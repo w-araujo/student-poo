@@ -43,14 +43,14 @@ class Programa
                 case "2":
                     foreach(User user1 in users)
                     {
-                        user1.Show();
+                        user1.Greet();
                     }
                     break;
 
                 case "3":
                     foreach (User user1 in users)
                     {
-                        user1.Show(true);
+                        user1.Greet(true);
                     }
                     break;
 
